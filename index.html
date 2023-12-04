@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="canonical" href="https://www.duartesebastian.com">
+    <meta name="descripcion" content="Portfolio de Sebastian Exequiel Duarte, Desarrollador FullStack .Net">
+    <meta name="keywords" content=".Net,C#,C SHARP, SQL Server,ASP.NET,Base de datos,Javascript,HTML,CSS.">
+    <meta name="author" content="Duarte Sebastian Exequiel">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Duarte Sebastian</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/Duarte Sebastian/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">EXPERIENCIA</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PROYECTOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="https://github.com/SebastianDte" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/sebateunmate/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sebastiandte/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+            </header>
+            <div class="presentacion" >
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Sebastian Duarte</span>, Full Stack .Net</h2>
+                <p class="descripcion">Si se puede <strong>imaginar</strong>, se puede <strong>programar.</strong></p>
+                <a href="#portfolio" onclick="seleccionar(this)">Mis proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/aaa-removebg-preview.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2><span></span> </h2>
+            <h3></h3>
+
+            <p>Comencé mis estudios de forma autodidacta en el año 2021 <br> con un enfoque hacia al backend. <br>
+                Actualmente curso una Tecnicatura en Programación.
+            </p>
+            <p>
+                Cuando no estoy escribiendo código, disfruto del aprendizaje musical. <br>
+                Me dediqué durante 5 años de forma profesional a la música, <br>
+                Hoy en día, es mi hobby y junto con la programación, hacen <br>
+                un equilibrio perfecto entre mi mundo digital y analógico.
+            </p>
+            <a href="#">Descargar CV</a>
+            <a href="https://github.com/SebastianDte" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sebastiandte/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+    </section>
+
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">Experiencias</h3>
+        <div class="fila">
+            <div class="servicio">
+                <!-- <span class="icono"><i class="fa-solid fa-file-code"></i></span> -->
+                <h4>FLG Apps</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Desarrollador Backend</li>
+                </ul>
+                <p>FLG Apps es una startup que brinda distintos tipos de servicios tecnologicos.
+                    Estamos trabajando en Gymapps una aplicación que ofrece servicios de Gestión a disintos Gymnasios
+                    facilitando el trabajo a los usuarios. En este proyecto me estoy desenpeñando como programador
+                    backend
+                    con Supabase <br><br>
+                    <strong><small>Año: 10/23 - Act.</small></strong>
+                </p>
+            </div>
+            <div class="servicio">
+                <!-- <span class="icono"> <i class="fa-solid fa-code"></i></span> -->
+                <h4>Variable X</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Profesor de Robotica</li>
+                </ul>
+                <p>
+                    Tuve la oportunidad de desempeñarme como profesor de robótica en una iniciativa educativa para niños
+                    de 6 a 8 años. Fue una experiencia enriquecedora que me permitió desarrollar habilidades pedagógicas
+                    y aportar al crecimiento educativo de los niños en el campo de la robótica y la tecnología.
+                    <br><br>
+                    <strong><small>08/2022 - 02/2023</small></strong>
+                </p>
+            </div>
+            <div class="servicio">
+                <!-- <span class="icono"><i class="fa-solid fa-file-code"></i></span> -->
+                <h4>MaxiPrograma</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Tutor/Colaborador</li>
+                </ul>
+                <p>
+
+                    Ofrezco asistencia a los alumnos para resolver dudas y guiarlos en su aprendizaje en el 
+                    curso gratuito de programación desde cero, nivel univercidad. <br>
+                    Tambien creo Guias con los ejercicios resueltos en diagramas de flujo y explicados a detalle.
+                    <br> <br> 
+                    <strong><small>06/2022 - Act.</small></strong>
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>Techskills</h3>
+        
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto1.jpg" alt="">
+                <div class="info">
+                    <h4>Primer proyecto Winforms</h4>
+                    <p>Apliación de escritorio de Música, con coneccion a base de Datos
+                        se puede buscar por nombre,artista,año y reproducir musica. <br>
+                    </p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto2.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto3.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto4.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto5.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto6.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto7.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto8.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto9.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
+                        class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <div class="redes">
+            <a href="https://github.com/SebastianDte" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/sebateunmate/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sebastiandte/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
