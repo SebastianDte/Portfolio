@@ -198,9 +198,8 @@
     <section id="contacto">
         <h3 class="titulo-seccion">Contacto</h3>
         <div class="contenedor-form">
-            <!-- Modifica el atributo action del formulario con el nuevo endpoint de Formspree -->
-            <form action="https://formspree.io/f/xzblnbkg" method="POST">
-                <!-- Asegúrate de que cada campo de entrada tenga un atributo name -->
+
+            <form action="https://formspree.io/f/xzblnbkg" method="POST" id="sendForm">
                 <input type="text" name="_gotcha" style="display:none">
                 <div class="fila mitad">
                     <input type="text" name="nombre" placeholder="Nombre Completo *" class="input-mitad" required>
@@ -213,12 +212,38 @@
                     <textarea name="mensaje" cols="30" rows="10" placeholder="Tu Mensaje..." required
                         class="input-full"></textarea>
                 </div>
-                <!-- Asegúrate de que el botón de envío sea de tipo "submit" -->
                 <input type="submit" value="Enviar Mensaje" class="btn-enviar">
             </form>
+
         </div>
     </section>
-    
+    <script>
+        const $form = document.querySelector('#sendForm');
+        $form.addEventListener('submit', handlesubmit);
+
+        async function handlesubmit(event) {
+            event.preventDefault();
+            const form = new FormData(this);
+            const response = await fetch(this.action, {
+                method: this.method,
+                body: form,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            if (response.ok) {
+                this.reset();
+                alert('Gracias por contactarme, te escribiré pronto :)');
+            }
+        }
+
+    </script>
+
+
+
+
+
+
 
     <!-- SECCION FOOTER -->
     <footer>
