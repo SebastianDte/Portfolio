@@ -14,6 +14,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo.css">
     <title>Duarte Sebastian</title>
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
 </head>
 
 <body>
@@ -146,10 +148,42 @@
     </section>
 
     <!-- SECCION H A B I L I D A D E S -->
-    <div class="contenedor-skills" id="skills">
-        <h3>Techskills</h3>
+    <section class="skills-section">
+        <h3 class="title-section">Skills</h3>
 
-    </div>
+        <div class="skill-item">
+            <img src="./img/skill/c_sharp_icon_213045.png" alt="C# Logo">
+            <p></p>
+        </div>
+        
+        <div class="skill-item">
+            <img src="./img/skill/servidor-sql.png" alt="SQL Server Logo">
+            <p></p>
+        </div>
+        <div class="skill-item">
+            <img src="./img/skill/Visual_Studio_23517.png" alt="SQL Server Logo">
+            <p></p>
+        </div>
+        <div class="skill-item">
+            <img src="./img/skill/github_original_wordmark_logo_icon_146506.png" alt="SQL Server Logo">
+            <p></p>
+        </div>
+        <div class="skill-item">
+            <img src="./img/skill/html-5.png" alt="SQL Server Logo">
+            <p></p>
+        </div>
+        <div class="skill-item">
+            <img src="./img/skill/css-3.png" alt="SQL Server Logo">
+            <p></p>
+        </div>
+        <div class="skill-item">
+            <img src="./img/skill/js.png" alt="SQL Server Logo">
+            <p></p>
+        </div>
+        
+    
+        <!-- Agrega más habilidades según sea necesario -->
+    </section>
 
     <!-- SECCION PORTAFOLIO -->
     <section id="portfolio">
@@ -233,13 +267,25 @@
             });
             if (response.ok) {
                 this.reset();
-                alert('Gracias por contactarme, te escribiré pronto :)');
+                swal.fire({
+                    Color: "black",
+                    background: "white",
+                    confirmButtonColor: '#d943f7',
+                    icon: "success",
+                    iconColor: 'violet',
+                    confirmButtonText: "Cerrar",
+                    title: 'Gracias por contactarme, te escribiré pronto :)',
+                    customClass: {
+                        title: 'mi-titulo',  // Clase de estilo para el título
+                        content: 'mi-contenido'  // Clase de estilo para el contenido
+                    }
+                })
             }
         }
 
     </script>
 
-<!-- SECCION FOOTER -->
+    <!-- SECCION FOOTER -->
     <footer>
         <div class="redes">
             <a href="https://github.com/SebastianDte" target="_blank"><i class="fa-brands fa-github"></i></a>
