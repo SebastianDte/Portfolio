@@ -100,7 +100,6 @@
         <h3 class="titulo-seccion">Experiencias</h3>
         <div class="fila">
             <div class="servicio">
-                <!-- <span class="icono"><i class="fa-solid fa-file-code"></i></span> -->
                 <h4>FLG Apps</h4>
                 <hr>
                 <ul class="servicios-tag">
@@ -115,7 +114,6 @@
                 </p>
             </div>
             <div class="servicio">
-                <!-- <span class="icono"> <i class="fa-solid fa-code"></i></span> -->
                 <h4>Variable X</h4>
                 <hr>
                 <ul class="servicios-tag">
@@ -130,7 +128,6 @@
                 </p>
             </div>
             <div class="servicio">
-                <!-- <span class="icono"><i class="fa-solid fa-file-code"></i></span> -->
                 <h4>MaxiPrograma</h4>
                 <hr>
                 <ul class="servicios-tag">
@@ -163,28 +160,25 @@
             <p></p>
         </div>
         <div class="skill-item">
-            <img src="./img/skill/Visual_Studio_23517.png" alt="SQL Server Logo">
+            <img src="./img/skill/icons8-net-framework-480.png" alt=".Net Core Logo">
             <p></p>
         </div>
         <div class="skill-item">
-            <img src="./img/skill/github_original_wordmark_logo_icon_146506.png" alt="SQL Server Logo">
+            <img src="./img/skill/github_original_wordmark_logo_icon_146506.png" alt="Git Hub Logo">
             <p></p>
         </div>
         <div class="skill-item">
-            <img src="./img/skill/html-5.png" alt="SQL Server Logo">
+            <img src="./img/skill/html-5.png" alt="HTML  Logo">
             <p></p>
         </div>
         <div class="skill-item">
-            <img src="./img/skill/css-3.png" alt="SQL Server Logo">
+            <img src="./img/skill/css-3.png" alt="CSS Logo">
             <p></p>
         </div>
         <div class="skill-item">
-            <img src="./img/skill/js.png" alt="SQL Server Logo">
+            <img src="./img/skill/js.png" alt="Javascript Logo">
             <p></p>
         </div>
-        
-    
-        <!-- Agrega más habilidades según sea necesario -->
     </section>
 
     <!-- SECCION PORTAFOLIO -->
@@ -236,13 +230,14 @@
         <div class="contenedor-form">
 
             <form action="https://formspree.io/f/xzblnbkg" method="POST" id="sendForm">
-                <input type="text" name="_gotcha" style="display:none">
+                <input type="text" name="_gotcha" style="display:none" >
+                
                 <div class="fila mitad">
-                    <input type="text" name="nombre" placeholder="Nombre Completo *" class="input-mitad" required>
+                    <input type="text" name="nombre" placeholder="Nombre Completo *" class="input-mitad" required minlength="3" maxlength="20">
                     <input type="email" name="email" placeholder="Dirección de Email" class="input-mitad" required>
                 </div>
                 <div class="fila">
-                    <input type="text" name="tema" placeholder="Tema..." class="input-full" required>
+                    <input type="text" name="tema" placeholder="Tema..." class="input-full" required required minlength="4">
                 </div>
                 <div class="fila">
                     <textarea name="mensaje" cols="30" rows="10" placeholder="Tu Mensaje..." required
@@ -278,13 +273,12 @@
                     confirmButtonText: "Cerrar",
                     title: 'Gracias por contactarme, te escribiré pronto :)',
                     customClass: {
-                        title: 'mi-titulo',  // Clase de estilo para el título
-                        content: 'mi-contenido'  // Clase de estilo para el contenido
+                        title: 'mi-titulo',  
+                        content: 'mi-contenido'  
                     }
                 })
             }
         }
-
     </script>
 
     <!-- SECCION FOOTER -->
