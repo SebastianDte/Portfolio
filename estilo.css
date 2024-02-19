@@ -233,7 +233,7 @@
         
         #servicios .fila {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             max-width: 1150px;
             margin: 30px auto;
         }
@@ -241,8 +241,8 @@
         #servicios .fila .servicio {
             max-width: 350px;
             background-color: #fff;
-            padding: 30px;
-            margin: 0 5px;
+            padding: 40px;
+            margin: 0 30px;
             border-radius: 5px;
             transition: .5s;
         }
@@ -358,12 +358,12 @@
         
         #portfolio .fila {
             display: flex;
-            justify-content: space-between;
-            margin: 30px 0;
+            justify-content: center;
+            margin: 40px 0;
         }
         
         #portfolio .fila .proyecto {
-            max-width: 450px;
+            max-width: 700px;
             border: 1px solid #000;
             margin: 0 10px;
             position: relative;
@@ -387,7 +387,7 @@
             position: absolute;
             left: 0px;
             background-color: rgba(0, 0, 0, 0.8);
-            color: #d943f7;
+            color: #fefbff;
             width: 100%;
             padding: 10px;
             opacity: 0;

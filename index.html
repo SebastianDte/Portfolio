@@ -58,7 +58,7 @@
             </header>
             <div class="presentacion">
                 <p class="bienvenida">Bienvenidos</p>
-                <h2>Soy <span>Sebastian Duarte</span>, Full Stack .Net</h2>
+                <h2>Soy <span>Sebastian Duarte</span>, Desarrollador .Net</h2>
                 <p class="descripcion">Si se puede <strong>imaginar</strong>, se puede <strong>programar.</strong></p>
                 <a href="#portfolio" onclick="seleccionar(this)">Mis proyectos</a>
             </div>
@@ -75,8 +75,11 @@
             <h2><span></span> </h2>
             <h3></h3>
 
-            <p>Comencé mis estudios de forma autodidacta en el año 2021 <br> con un enfoque hacia al backend. <br>
-                Actualmente curso una Tecnicatura en Programación.
+            <p>
+                Inicié mi aprendizaje autodidacta con .NET Framework y C#, <br>actualmente estoy cursando
+                una carrera universitaria <br> de sistemas en UNER. <br>
+                Mi objetivo es seguir profundizando mis conocimientos como programador backend hasta convertirme <br>
+                en un programador Full Stack  en .NET.
             </p>
             <p>
                 Cuando no estoy escribiendo código, disfruto del aprendizaje musical. <br>
@@ -84,7 +87,7 @@
                 Hoy en día, es mi hobby y junto con la programación, hacen <br>
                 un equilibrio perfecto entre mi mundo digital y analógico.
             </p>
-            <a href="https://drive.google.com/file/d/1ZTKuNsjiLDUNTLytrhvFt0xcGY3ZyVO1/view?usp=drive_link"
+            <a href="https://drive.google.com/file/d/1ma6g-EM07FYiKzShhLBugCZzKL0sj5jY/view?usp=sharing"
                 target="_blank">Ver CV</a>
             <a href="https://github.com/SebastianDte" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/sebastiandte/" target="_blank"><i
@@ -99,7 +102,7 @@
     <section id="servicios">
         <h3 class="titulo-seccion">Experiencias</h3>
         <div class="fila">
-            <div class="servicio">
+            <!-- <div class="servicio">
                 <h4>FLG Apps</h4>
                 <hr>
                 <ul class="servicios-tag">
@@ -112,7 +115,7 @@
                     con Supabase <br><br>
                     <strong><small>Año: 10/23 - Act.</small></strong>
                 </p>
-            </div>
+            </div> -->
             <div class="servicio">
                 <h4>Variable X</h4>
                 <hr>
@@ -186,38 +189,46 @@
         <div class="fila">
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto1.jpg" alt="">
+                <img src="./img/Proyectos/Discos.png" alt="Imagen portada, proyecto winforms, gestión de discos">
                 <div class="info">
-                    <h4>Primer proyecto Winforms</h4>
-                    <p> <br>
+                    <h4 >Gestión de Discos</h4>
+                    <p> 
+                        Aplicación para la gestión de Discos musicales en la cual se pueden insertar, modificar o eliminar Discos, 
+                        hacer búsquedas avanzadas contra la base de datos o rápidas sobre una copia de la lista. 
+                        Posibilidad de subir imágenes locales o desde la web. 
+                        En este proyecto utilicé .NET Framework 4.8, conexiones a base de datos con ADO.NET, 
+                        validaciones de campos con Error Provider. Para la organización del proyecto, implementé 
+                        una arquitectura en capas.
                     </p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto2.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto3.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-        </div>
-        <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto4.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
+                    <br>
+                    
+                    <style>
+                        /* Cambiar color de iconos y texto dentro de los enlaces */
+                        .github-link i,
+                        .youtube-link i {
+                            color: white;
+                        }
+                    
+                        .github-link,
+                        .youtube-link {
+                            color: white;
+                            text-decoration: none; /* Para quitar el subrayado del enlace */
+                        }
+                        /* Cambiar color del texto al pasar el mouse */
+                            .github-link:hover,
+                            .youtube-link:hover {
+                                color: #a027b8; /* Color lila de .NET */
+                            }
+                    </style>
+                    
+                    <a href="https://github.com/SebastianDte/Discos" target="_blank" class="github-link">
+                       <i class="fab fa-github" style="color: white;"></i> Código
+                    </a>
+                    
+                    <a href="https://www.youtube.com/watch?v=tu_id_del_video" target="_blank" class="youtube-link">
+                       <i class="fab fa-youtube" style="color: white;"></i> Demo
+                    </a>
+                </div>                    
             </div>
         </div>
     </section>
