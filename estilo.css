@@ -9,6 +9,7 @@
         html {
             scroll-behavior: smooth;
         }
+        
         /* *********************/
         /* seccion I N I C I O */
         /* *********************/
@@ -126,7 +127,7 @@
         }
         
         #inicio .contenido .presentacion a:hover {
-            background-color: #d943f7;
+            background-color: #8e26a3;
         }
         
         #icono-nav {
@@ -220,6 +221,14 @@
             text-align: center;
             background-color: #f3f3f3;
         }
+        .servicios-lista li {
+            display: flex;
+            flex-direction: column;
+            padding: 15px; /* Espacio interno alrededor del texto */
+            margin: 10px 0; /* Espacio entre items */
+           
+        }
+       
         
         #servicios .titulo-seccion {
             text-align: center;
@@ -232,23 +241,27 @@
         }
         
         #servicios .fila {
-            display: flex;
+            display: flex; 
+            flex-direction: column; 
+            max-width: 950px; 
+            margin: 30px auto; 
+            align-items: center; /* Centra horizontalmente los elementos */
             justify-content: center;
-            max-width: 1150px;
-            margin: 30px auto;
         }
         
         #servicios .fila .servicio {
-            max-width: 350px;
+            width: 100%; 
+            /* limitar el ancho máximo */
+            max-width: 2000px;
             background-color: #fff;
             padding: 40px;
-            margin: 0 30px;
+            margin: 15px 0; /* Cambia el margen para que haya espacio vertical entre tarjetas */
             border-radius: 5px;
             transition: .5s;
         }
         
         #servicios .fila .servicio:hover {
-            box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+            box-shadow: 5px 5px 10px #565656, -5px -5px 10px #7c7c7c;
         }
         
         #servicios .fila .servicio .icono {
@@ -284,56 +297,7 @@
             font-size: 14px;
             line-height: 22px;
         }
-        /* *********************/
-        /* seccion S K I L L S */
-        /* *********************/
-        
-        .skills-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-            background: linear-gradient(#624c66af, rgba(33, 16, 16, 0.8));
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: #fff;
-            background-position: center center;
-            padding: 100px 0;
-            text-align: center;
-        }
-        
-        .skill-item {
-            margin: 0px;
-            text-align: center;
-            width: 100px; /* Ancho de cada elemento en dispositivos más grandes */
-        }
-        .title-section {
-            width: 100%;
-            font-size: 30px; /* Ajusta el tamaño del texto según tus preferencias */
-            margin-bottom: 20px;
-            color: #fff;
-            text-align: center;
-            font-size: 22px;
-            text-transform: uppercase;
-            text-decoration: underline;
-            text-decoration-color: #d3d3d3;
-            text-decoration-thickness: 5px;
-        }
-        
-        .skill-item img {
-            width: 100%; /* Las imágenes ocupan el 100% del ancho del contenedor */
-            max-width: 100%; /* Ancho máximo para no desbordar en dispositivos más pequeños */
-            height: auto; /* Altura automática para mantener la proporción */
-        }
-        
-        /* Media query para dispositivos más pequeños */
-        @media (max-width: 300px) {
-            .skill-item {
-                width: 100%; /* Ocupa todo el ancho en dispositivos más pequeños */
-            }
-        }
-
+       
         /* *********************/
         /* seccion P O R T F O L I O */
         /* *********************/
@@ -360,12 +324,14 @@
             display: flex;
             justify-content: center;
             margin: 40px 0;
+            flex-wrap: wrap; 
         }
         
         #portfolio .fila .proyecto {
-            max-width: 700px;
+            flex: 0 1 calc(50% - 20px); 
+            max-width: 700px; 
             border: 1px solid #000;
-            margin: 0 10px;
+            margin: 10px; 
             position: relative;
             overflow: hidden;
         }
@@ -393,12 +359,16 @@
             opacity: 0;
             bottom: -40px;
             transition: .5s;
+           
+           
         }
         
         #portfolio .fila .proyecto:hover .info {
             opacity: 1;
             bottom: 0;
+            
         }
+        
         /* *********************/
         /* seccion C O N T A C T O */
         /* *********************/
